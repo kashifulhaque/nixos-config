@@ -8,6 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./vm.nix
     ];
 
   # Bootloader.
@@ -170,6 +171,9 @@
       automake
       nodejs_20
       python310
+
+      # Gaming
+      prismlauncher
     ];
   };
 
