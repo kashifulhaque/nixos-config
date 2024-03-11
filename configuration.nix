@@ -134,6 +134,7 @@
       fzf
       eza
       zip
+      glow
       tmux
       wget
       stow
