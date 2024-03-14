@@ -101,7 +101,7 @@
       google-chrome
 
       # Other internet stuff
-      discord
+      webcord-vencord
 
       # System monitors
       htop
@@ -139,6 +139,7 @@
       tmux
       wget
       stow
+      mold
       xclip
       typst
       ffmpeg
