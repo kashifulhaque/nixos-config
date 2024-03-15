@@ -171,8 +171,9 @@
       autoconf
       automake
       nodejs_20
-      python310
+      micromamba
       jetbrains.datagrip
+      vmware-workstation
 
       # Gaming
       prismlauncher
