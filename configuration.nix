@@ -60,6 +60,9 @@
   services.xserver.displayManager.sddm.enable = true;
   services.xserver.desktopManager.plasma5.enable = true;
 
+  # Enable experimental stuff
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
   # Configure keymap in X11
   services.xserver = {
     layout = "us";
