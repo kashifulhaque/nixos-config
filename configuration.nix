@@ -138,6 +138,7 @@
       fzf
       eza
       zip
+      zsh
       glow
       tmux
       wget
@@ -152,8 +153,10 @@
       ripgrep
       du-dust
       lazygit
+      alacritty
       lazydocker
       oh-my-posh
+      oh-my-zsh
       mediawriter
       xwaylandvideobridge
 
