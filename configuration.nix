@@ -104,7 +104,7 @@
       google-chrome
 
       # Other internet stuff
-      webcord-vencord
+      webcord
 
       # System monitors
       htop
@@ -151,6 +151,7 @@
       glances
       gping
       ripgrep
+      zellij
       du-dust
       lazygit
       alacritty
