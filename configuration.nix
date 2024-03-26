@@ -140,7 +140,6 @@
       zip
       zsh
       glow
-      tmux
       wget
       stow
       mold
@@ -227,6 +226,12 @@
 
   # Enable dconf
   programs.dconf.enable = true;
+
+  # Enable tmux
+  programs.tmux = {
+    enable = true;
+    clock24 = true;
+  };
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
