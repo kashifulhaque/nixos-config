@@ -112,23 +112,20 @@
 
       # Some fetches for flexin'
       nitch
-      afetch
-      pfetch
       cpufetch
       neofetch
-      screenfetch
       freshfetch
 
       # KDE stuff
       kate
 
       # Other cool stuff
-      browsh
+      vlc
       ddgr
       tuir
-      httpie
-      vlc
       navi
+      browsh
+      httpie
 
       # CLI tools
       jq
@@ -145,18 +142,18 @@
       mold
       xclip
       typst
-      ffmpeg
       unzip
-      glances
       gping
-      ripgrep
+      ffmpeg
       zellij
       du-dust
+      glances
       lazygit
+      ripgrep
       alacritty
+      oh-my-zsh
       lazydocker
       oh-my-posh
-      oh-my-zsh
       mediawriter
       xwaylandvideobridge
 
