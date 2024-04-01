@@ -16,6 +16,9 @@
     win-virtio
     win-spice
     gnome.adwaita-icon-theme
+
+    # Remote Desktop Client
+    remmina
   ];
 
   # Manage the virtualization services
