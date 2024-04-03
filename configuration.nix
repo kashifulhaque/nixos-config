@@ -155,11 +155,8 @@
       xwaylandvideobridge
 
       # Development stuff
-      go
-      bun
       git
       gcc
-      jdk17
       cargo
       rustc
       clang
@@ -169,7 +166,6 @@
       gnumake
       autoconf
       automake
-      nodejs_20
       micromamba
       jetbrains.datagrip
       vmware-workstation
