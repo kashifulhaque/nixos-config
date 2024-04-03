@@ -150,7 +150,6 @@
       unzip
       gping
       ffmpeg
-      zellij
       du-dust
       glances
       lazygit
@@ -159,7 +158,6 @@
       oh-my-zsh
       lazydocker
       oh-my-posh
-      mediawriter
       xwaylandvideobridge
 
       # Development stuff
@@ -176,10 +174,6 @@
       automake
       micromamba
       jetbrains.datagrip
-      vmware-workstation
-
-      # Gaming
-      prismlauncher
     ];
   };
 
