@@ -86,7 +86,6 @@
       # Browsers
       brave
       firefox
-      google-chrome
 
       # Other internet stuff
       webcord
@@ -94,9 +93,6 @@
       # System monitors
       htop
       zfxtop
-
-      # KDE stuff
-      kate
 
       # Other cool stuff
       vlc
