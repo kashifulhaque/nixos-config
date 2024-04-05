@@ -8,6 +8,10 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./desktop.nix
+      ./fetches.nix
+      ./cli.nix
+      ./dev.nix
       ./vm.nix
     ];
 
@@ -27,9 +31,6 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
-
-  # Enable docker
-  virtualisation.docker.enable = true;
 
   # Enable bluetooth
   hardware.bluetooth.enable = true;
@@ -51,19 +52,6 @@
     LC_PAPER = "en_IN";
     LC_TELEPHONE = "en_IN";
     LC_TIME = "en_IN";
-  };
-
-  # Enable the X11 windowing system.
-  services.xserver.enable = true;
-
-  # Enable the KDE Plasma Desktop Environment.
-  services.xserver.displayManager.sddm.enable = true;
-  services.xserver.desktopManager.plasma5.enable = true;
-
-  # Configure keymap in X11
-  services.xserver = {
-    layout = "us";
-    xkbVariant = "";
   };
 
   # Enable CUPS to print documents.
@@ -107,12 +95,6 @@
       htop
       zfxtop
 
-      # Some fetches for flexin'
-      nitch
-      cpufetch
-      neofetch
-      freshfetch
-
       # KDE stuff
       kate
 
@@ -123,50 +105,6 @@
       navi
       browsh
       httpie
-
-      # CLI tools
-      jq
-      fd
-      lf
-      bat
-      fzf
-      eza
-      zip
-      zsh
-      glow
-      moar
-      wget
-      stow
-      mold
-      xclip
-      typst
-      unzip
-      gping
-      ffmpeg
-      du-dust
-      glances
-      lazygit
-      ripgrep
-      alacritty
-      oh-my-zsh
-      lazydocker
-      oh-my-posh
-      xwaylandvideobridge
-
-      # Development stuff
-      git
-      gcc
-      cargo
-      rustc
-      clang
-      neovim
-      vscode
-      libgcc
-      gnumake
-      autoconf
-      automake
-      micromamba
-      jetbrains.datagrip
     ];
   };
 
@@ -206,15 +144,6 @@
     sessionVariables = {
       LD_LIBRARY_PATH = "${pkgs.stdenv.cc.cc.lib}/lib";
     };
-  };
-
-  # Enable dconf
-  programs.dconf.enable = true;
-
-  # Enable tmux
-  programs.tmux = {
-    enable = true;
-    clock24 = true;
   };
 
   # Some programs need SUID wrappers, can be configured further or are
