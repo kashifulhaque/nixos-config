@@ -1,10 +1,6 @@
 { config, pkgs, ... }:
 
 {
-  imports = [
-    ./gnome.nix
-  ];
-
   # Enable the X11 windowing system.
   services.xserver.enable = true;
 
@@ -17,4 +13,14 @@
   # Enable the Gnome Desktop Environment.
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.desktopManager.gnome.enable = true;
+
+  environment.systemPackages = with pkgs; [
+    # Gnome apps
+    gnome.gnome-tweaks
+
+    # Gnome extensions
+    gnomeExtensions.appindicator
+  ];
+
+  services.udev.packages = with pkgs; [ gnome.gnome-settings-daemon ];
 }
