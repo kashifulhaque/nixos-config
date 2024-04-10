@@ -10,6 +10,7 @@
       ./hardware-configuration.nix
       ./desktop.nix
       ./fetches.nix
+      ./video.nix
       ./cli.nix
       ./dev.nix
       ./vm.nix
