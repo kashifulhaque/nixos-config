@@ -12,6 +12,7 @@
       ./desktop.nix
       ./fetches.nix
       ./video.nix
+      ./tools.nix
       ./cli.nix
       ./dev.nix
       ./vm.nix
