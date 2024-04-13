@@ -14,7 +14,6 @@
     git
     gcc
     clang
-    devenv
     neovim
     vscode
     libgcc
@@ -26,4 +25,4 @@
     # SQL Client
     jetbrains.datagrip
   ];
-}
+ }
