@@ -17,6 +17,7 @@
     mold
     xclip
     typst
+    rsync
     unzip
     gping
     ffmpeg

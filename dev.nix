@@ -14,6 +14,7 @@
     git
     gcc
     clang
+    devenv
     neovim
     vscode
     libgcc
