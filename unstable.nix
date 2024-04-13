@@ -6,7 +6,6 @@ let
 in {
   environment.systemPackages = [
     unstable.devenv
-    unstable.uv
   ];
 }
 
