@@ -8,8 +8,10 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./unstable.nix
       ./desktop.nix
       ./fetches.nix
+      ./tools.nix
       ./cli.nix
       ./dev.nix
       ./vm.nix
@@ -21,6 +23,9 @@
 
   # Define your hostname.
   networking.hostName = "endernix";
+
+  # Enable the Flakes feature and the accompanying new nix command-line tool
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   # Enables wireless support via wpa_supplicant.
   # networking.wireless.enable = true;
@@ -35,6 +40,9 @@
   # Enable bluetooth
   hardware.bluetooth.enable = true;
   hardware.bluetooth.powerOnBoot = true;
+
+  # Enable bluetooth blueman
+  services.blueman.enable = true;
 
   # Set your time zone.
   time.timeZone = "Asia/Kolkata";
@@ -86,7 +94,6 @@
       # Browsers
       brave
       firefox
-      google-chrome
 
       # Other internet stuff
       webcord

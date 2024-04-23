@@ -22,6 +22,9 @@
     automake
     micromamba
 
+    # REST client
+    hoppscotch
+
     # SQL Client
     jetbrains.datagrip
   ];
