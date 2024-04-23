@@ -8,7 +8,6 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      ./unstable.nix
       ./desktop.nix
       ./fetches.nix
       ./tools.nix
