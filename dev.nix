@@ -21,8 +21,5 @@
     autoconf
     automake
     micromamba
-
-    # SQL Client
-    jetbrains.datagrip
   ];
  }
