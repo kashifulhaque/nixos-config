@@ -24,9 +24,6 @@
   # Define your hostname.
   networking.hostName = "endernix";
 
-  # Enable the Flakes feature and the accompanying new nix command-line tool
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
-
   # Enables wireless support via wpa_supplicant.
   # networking.wireless.enable = true;
 
@@ -40,9 +37,6 @@
   # Enable bluetooth
   hardware.bluetooth.enable = true;
   hardware.bluetooth.powerOnBoot = true;
-
-  # Enable bluetooth blueman
-  services.blueman.enable = true;
 
   # Set your time zone.
   time.timeZone = "Asia/Kolkata";
@@ -146,12 +140,6 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
   ];
-
-  environment = {
-    sessionVariables = {
-      LD_LIBRARY_PATH = "${pkgs.stdenv.cc.cc.lib}/lib";
-    };
-  };
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
